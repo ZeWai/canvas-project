@@ -41,9 +41,13 @@
       <span class="btn btn-primary fa fa-square" id="drawing-strokerectangle"
         >Draw Stroke Rectangle</span
       >
-            <!-- The drawing rectangle button  -->
+            <!-- The drawing circle button  -->
       <span class="btn btn-primary fa fa-square" id="drawing-circle"
         >Draw Circle</span
+      >
+                  <!-- The drawing stroke circle button  -->
+      <span class="btn btn-primary fa fa-square" id="drawing-strokecicrle"
+        >Draw Stroke Circle</span
       >
       <!-- The drawing line button  -->
       <span class="btn btn-info fa fa-paint-brush" id="drawing-line"
@@ -94,6 +98,11 @@
       src="./javascript/drawing-eraser.js"
       type="text/javascript"
     ></script>
+    <!-- The stroke circle function -->
+        <script
+      src="./javascript/drawing-strokecircle.js"
+      type="text/javascript"
+    ></script>
         <script
       src="./javascript/colorselector.js"
       type="text/javascript"
@@ -116,6 +125,9 @@
       });  
             $("#drawing-strokerectangle").click(() => {
         currentFunction = new DrawingStrokeRectangle(contextReal, contextDraft);
+      });
+                  $("#drawing-strokecicrle").click(() => {
+        currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
       });
     })
     </script>
