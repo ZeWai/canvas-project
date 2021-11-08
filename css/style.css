@@ -1,0 +1,55 @@
+.canvas {
+  border: 1px black solid;
+  position: absolute;
+  top: 10%;
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
+  background-color: white;
+}
+
+#canvas-draft {
+  background-color: transparent;
+}
+body {
+  overflow: hidden;
+  background-color: navy;
+}
+#canvas-container {
+  height: 700px;
+}
+
+#color-input {
+  display: none;
+}
+#color-label {
+  margin-left: 15px;
+  position: absolute;
+  height: 30px;
+  width: 50px;
+}
+#color-input:checked ~ #color-picker {
+  opacity: 1;
+}
+#color-picker {
+  position: absolute;
+  left: 70px;
+  background-color: white;
+  height: 150px;
+  width: 185px;
+  border: solid 1px #ccc;
+  opacity: 0;
+  padding: 5px;
+}
+canvas:hover {
+  cursor: crosshair;
+}
+
+h1 {
+  text-align: center;
+}
+
+.color-selector {
+  width: 40px;
+  height: 40px;
+}
