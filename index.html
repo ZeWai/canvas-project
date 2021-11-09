@@ -57,6 +57,9 @@
       <span class="btn btn-info bi bi-eraser-fill" id="drawing-eraser"
         >Eraser</span
       > 
+      <span class="btn btn-info bi bi-eraser-fill" id="clear"
+        >Clear</span
+      > 
 <!-- color selector -->
 <input onInput="color=this.value" type="color" class="color-selector">
 <!-- width -->
@@ -99,11 +102,11 @@
       type="text/javascript"
     ></script>
     <!-- The stroke circle function -->
-        <script
+    <script
       src="./javascript/drawing-strokecircle.js"
       type="text/javascript"
     ></script>
-        <script
+    <script
       src="./javascript/colorselector.js"
       type="text/javascript"
     ></script>
@@ -120,16 +123,19 @@
       $("#drawing-line").click(() => {
         currentFunction = new DrawingLine(contextReal);
       });  
-            $("#drawing-eraser").click(() => {
+      $("#drawing-eraser").click(() => {
         currentFunction = new Eraser(contextReal);
       });  
-            $("#drawing-strokerectangle").click(() => {
+      $("#drawing-strokerectangle").click(() => {
         currentFunction = new DrawingStrokeRectangle(contextReal, contextDraft);
       });
-                  $("#drawing-strokecicrle").click(() => {
+      $("#drawing-strokecicrle").click(() => {
         currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
       });
-    })
+      $("#clear").click(() => {
+        contextReal.clearRect(0,0,canvasReal.width,canvasReal.height);
+    });
+  })
     </script>
   </body>
 </html>
