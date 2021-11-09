@@ -38,6 +38,8 @@ class DrawingStrokeCircle extends PaintFunction {
          this.contextReal.beginPath();
          this.contextReal.ellipse(centerX, centerY,NewX, NewY, 0,0, Math.PI*2);
          this.contextReal.stroke();
+         
+  autosave();
      }
 
      onMouseLeave() {}

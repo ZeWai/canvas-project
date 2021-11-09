@@ -5,6 +5,7 @@ class DrawingCircle extends PaintFunction {
         this.contextDraft = contextDraft;
     }
 
+    
     onMouseDown(coord, e) {
         this.contextReal.fillStyle = color;
         this.origX = coord[0];
@@ -36,6 +37,8 @@ class DrawingCircle extends PaintFunction {
         this.contextReal.beginPath();
         this.contextReal.ellipse(centerX, centerY,NewX, NewY,0,0, Math.PI*2);
         this.contextReal.fill();
+
+  autosave();
     }
 
     onMouseLeave() {}
