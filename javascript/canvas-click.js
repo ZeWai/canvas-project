@@ -22,6 +22,9 @@
     $("#drawing-strokecicrle").click(() => {
         currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
     });
+    $("#drawing-straightline").click(() => {
+    currentFunction = new DrawingStraightLine(contextReal, contextDraft);
+    });
     $("#undo").click(() => {
         undo();});
         $("#redo").click(() => {
