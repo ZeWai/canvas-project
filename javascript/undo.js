@@ -16,6 +16,7 @@ function undo () {
     } else if (undostep.length > 1) {
         var lastStep = new Image();
         lastStep.src = undostep[undostep.length - 2];
+        contextReal.clearRect(0,0,canvasReal.width,canvasReal.height);
         lastStep.onload = function (){
         contextReal.drawImage(lastStep, 0, 0);
     };
@@ -32,6 +33,4 @@ function redo () {
         };
         undostep.push(redostep.pop());
     }
-
-    
 }
