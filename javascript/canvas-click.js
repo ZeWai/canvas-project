@@ -22,6 +22,9 @@
     $("#drawing-strokecicrle").click(() => {
         currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
     });
+    $("#text-box-button").click(() => {
+        currentFunction = new Text(contextReal, contextDraft);
+    });
     $("#undo").click(() => {
         undo();});
         $("#redo").click(() => {
