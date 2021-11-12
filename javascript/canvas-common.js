@@ -9,6 +9,7 @@ let canvasDraft = document.getElementById("canvas-draft");
 let contextDraft = canvasDraft.getContext("2d");
 let currentFunction;
 let dragging = false;
+let keyListeners = {shift: false, escape: false}
 
 $("#canvas-draft").mousedown(function (e) {
   let mouseX = e.offsetX;

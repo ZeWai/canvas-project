@@ -5,6 +5,7 @@
   bottom: 20%;
   left: 10%;
   right: 10%;
+  
 }
 
 #canvas-draft {
@@ -50,4 +51,13 @@ h1 {
 .color-selector {
   width: 40px;
   height: 40px;
+}
+
+.button {
+  margin-left: 30px;
+}
+
+.btn {
+  margin-right: 30px;
+  margin-top: 5px;
 }
