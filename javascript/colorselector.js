@@ -1,5 +1,5 @@
 let color = '#010101';
-let linewidth ='7';
+let linewidth ='8';
 
 $("#width-selector")[0].oninput = function() {
     linewidth= this.value;
