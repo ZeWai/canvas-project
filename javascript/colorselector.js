@@ -1,5 +1,16 @@
-let color = "black";
-let linewidth ='2';
+let color = '#010101';
+let linewidth ='7';
+
+$("#width-selector")[0].oninput = function() {
+    linewidth= this.value;
+    $('.sizeImage').css("width",this.value);
+    $('.sizeImage').css("height",this.value);
+}
+
+$("#color-selector")[0].oninput = function() {
+    color= this.value;
+}
+
 let textSize =10;
 let textFont = "Times New Roman";
 
@@ -27,4 +38,5 @@ $("#text-font")[0].oninput = function () {
     textSettings.textFont = this.value;
     $('#text-font').css("font-family", this.value)
 };
+
 
