@@ -64,7 +64,7 @@ class Text extends PaintFunction {
                 existingTextBox = false;
             }
              };
-
+    }
              
 
              
@@ -79,6 +79,9 @@ class Text extends PaintFunction {
 
     onDragging(){}
     onMouseMove(){}
+    onMouseLeave(coord){
+    }
+
     onMouseUp(){}
    
     onMouseEnter(){}

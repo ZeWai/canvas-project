@@ -22,6 +22,16 @@
     $("#drawing-strokecircle").click(() => {
         currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
     });
+    $("#drawing-straightline").click(() => {
+    currentFunction = new DrawingStraightLine(contextReal, contextDraft);
+    });
+    $("#text-box-button").click(() => {
+    currentFunction = new Text(contextReal, contextDraft);
+    });
+    $("#color-fill").click(() => {
+    currentFunction = new ColorFill(contextReal, contextDraft);
+    });
+
     $("#text-box-button").click(() => {
         currentFunction = new Text(contextReal, contextDraft);
     });
