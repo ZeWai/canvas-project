@@ -1,5 +1,5 @@
 let color = '#010101';
-let linewidth ='7';
+let linewidth ='8';
 
 $("#width-selector")[0].oninput = function() {
     linewidth= this.value;
@@ -13,6 +13,7 @@ $("#color-selector")[0].oninput = function() {
 
 let textSize =10;
 let textFont = "Times New Roman";
+
 
 let textSettings = {
     textSize: $('#text-size').val(),

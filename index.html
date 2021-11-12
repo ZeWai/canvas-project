@@ -34,7 +34,7 @@
         height="550px"
       ></canvas>
     </div>
-    <div class="button col-sm-12" >
+    <div>
       <!-- The drawing rectangle button  -->
       <span class="btn btn-primary fa fa-square" id="drawing-rectangle"
         >Rectangle</span
@@ -82,28 +82,27 @@
         >Redo</span
       > 
             <!-- Textbox button-->
-      <span class="btn btn-primary" id="text-box-button">Text Box</span>
 
       <!-- Textbox button-->
       <span class="btn btn-primary" id="text-box-button">Text Box</span>
       <!--Font size-->
-      <label for="text-size">Text Size</label>
-          <!-- <select id="text-size">
-            <option value="9">9</option>
-            <option value="18">18</option>
-            <option value="24" selected>M</option>
-            <option value="30">L</option>
-            <option value="48">XL</option>
-            <option value="64">XXL</option>>
-          </select> -->
-          <input type="range" value="10" id="text-size" min="10" max="50">
+      <div>
+        <label for="text-size">Text Size</label>
+         
+          <input type="range" value="10" id="text-size" min="10" max="100">
+      </div>
+     
 
       <!--Font selector-->
       <label for="text-font">Text Font</label>
       <select id="text-font">
         <option style="font-family: Times New Roman">Times New Roman</option>
         <option style="font-family: Verdana">Verdana</option>
-        <option style="font-family:Arial">Arial</option>
+        <option style="font-family: Helvetica">Helvetica</option>
+        <option style="font-family: Tahoma">Tahoma</option>
+        <option style="font-family: Arial">Arial</option>
+        <option style="font-family: Georgia">Georgia</option>
+        <option style="font-family: Courier New">Courier New</option>
       </select>
       
       
@@ -117,10 +116,14 @@
 <input type="color" value="#000000" id="color-selector">
 <!-- width -->
 
-<div class="sizeImage"><input type="range" value="7" id="width-selector" min="3" max="20"></div>
+<div class="sizeImage"></div>
+<div>
+  <label for="width-selector">Stroke Width</label>
+  <input onInput="linewidth=this.value" type="range" value="8" id="width-selector" min="3" max="20">
+</div>
 
-<label for="width-selector">Stroke Width</label>
-<input onInput="linewidth=this.value" type="range" value="2" id="width-selector" min="1" max="20">
+
+
 <!-- jQuery -->
       <script
       src="https://code.jquery.com/jquery-3.5.1.js"
