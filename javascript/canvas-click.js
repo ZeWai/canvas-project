@@ -19,7 +19,7 @@
     $("#drawing-strokerectangle").click(() => {
         currentFunction = new DrawingStrokeRectangle(contextReal, contextDraft);
     });
-    $("#drawing-strokecicrle").click(() => {
+    $("#drawing-strokecircle").click(() => {
         currentFunction = new DrawingStrokeCircle(contextReal, contextDraft);
     });
     $("#drawing-straightline").click(() => {
@@ -31,6 +31,15 @@
     $("#color-fill").click(() => {
     currentFunction = new ColorFill(contextReal, contextDraft);
     });
+
+    $("#text-box-button").click(() => {
+        currentFunction = new Text(contextReal, contextDraft);
+    });
+    $("#drawing-straight-line").click(() => {
+        currentFunction = new StraightLine(contextReal, contextDraft);
+    });
+  
+
     $("#undo").click(() => {
         undo();});
         $("#redo").click(() => {
