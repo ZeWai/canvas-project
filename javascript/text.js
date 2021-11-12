@@ -65,16 +65,6 @@ class Text extends PaintFunction {
             }
              };
     }
-             
-
-             
-            
-        
-     
-    
-    
-
-    
 
     onDragging(){}
     onMouseMove(){}
@@ -84,9 +74,5 @@ class Text extends PaintFunction {
     onMouseUp(){}
    
     onMouseEnter(){}
-
-
-
-
 
 }
