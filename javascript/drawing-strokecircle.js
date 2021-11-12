@@ -24,6 +24,7 @@ class DrawingStrokeCircle extends PaintFunction {
          this.contextDraft.beginPath();
          this.contextDraft.ellipse(centerX, centerY,NewX,NewY, 0,0, Math.PI*2);
          this.contextDraft.stroke();
+         this.contextDraft.closePath();
 
      }
 
@@ -38,7 +39,7 @@ class DrawingStrokeCircle extends PaintFunction {
          this.contextReal.beginPath();
          this.contextReal.ellipse(centerX, centerY,NewX, NewY, 0,0, Math.PI*2);
          this.contextReal.stroke();
-         
+         this.contextDraft.closePath();
   autosave();
      }
 
