@@ -75,7 +75,7 @@ class Text extends PaintFunction {
     
 
     
-    }
+    
 
     onDragging(){}
     onMouseMove(){}
