@@ -1,10 +1,21 @@
 .canvas {
-  border: 1px black solid;
+  border: solid 3px #6e7491;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
   position: absolute;
-  top: 10%;
-  bottom: 20%;
-  left: 10%;
-  right: 10%;
+  transform: rotate(-1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: white;
+}
+.text-font{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #canvas-draft {
@@ -12,6 +23,7 @@
 }
 body {
   overflow: hidden;
+  background-image: linear-gradient(to right, rgba(230, 200, 30, 0.61), rgba(230, 27, 37, 0.685), rgba(251, 255, 0, 0), rgba(13, 180, 231, 0.842));
 }
 #canvas-container {
   height: 600px;
@@ -65,5 +77,59 @@ h1 {
 
 .btn {
   margin-right: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
+
+
+
+.title{
+  font-family: 'Yuji Mai', serif;
+  color: aqua;
+  font-size: 50px;
+}
+
+#container{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  
+  
+}
+#primary-buttons-left{
+  width: 33%;
+  border: 1px solid black;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#primary-buttons-middle{
+  width: 33%;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+
+}
+
+#primary-buttons-right{
+  width: 33%;
+  border: 1px solid black;
+  float: left;
+  box-sizing: border-box;
+  
+
+}
+
+#far-right{
+  margin-top: 30px;
+}
+
+#far-right-under{
+  margin-top: 10px;
+  margin-left: 85px;
+}
+
+#funny-buttons{
+  margin-left: 20px;
+}
+

@@ -38,6 +38,7 @@
     $("#drawing-straight-line").click(() => {
         currentFunction = new StraightLine(contextReal, contextDraft);
     });
+    
   
 
     $("#undo").click(() => {
