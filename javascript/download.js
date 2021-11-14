@@ -8,7 +8,7 @@ const uploadImage = (e) => {
         img.onload = () => {
             canvasReal.width = img.width;
             canvasReal.height = img.height;
-            contextReal.drawImage(img, 0, 0);
+            contextReal.drawImage(img, 200, 200);
         };
         img.src = reader.result;
     };
