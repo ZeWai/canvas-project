@@ -28,7 +28,6 @@ var fillColorG=parseInt(colorhex[2],16);
 var fillColorB=parseInt(colorhex[3],16);
 var rgb = [fillColorR, fillColorG, fillColorB];
 var pixelData = [startR, startG, startB];
-
 if (JSON.stringify(rgb) !== JSON.stringify(pixelData)) {
 while(pixelStack.length)
 {

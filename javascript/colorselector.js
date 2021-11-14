@@ -20,17 +20,6 @@ let textSettings = {
     textFont: $('#text-font').val()
 }
 
-
-
-
-
-
-
-
-
-
-
-
 $("#text-size")[0].oninput = function () {
     textSettings.textSize = this.value;
 };
