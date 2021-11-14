@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -6,12 +7,7 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,6 +15,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    
+    
   </head>
   <body class="container">
     <h1>Canvas Application</h1>
@@ -56,93 +54,113 @@
       <!-- The drawing line button  -->
       <span class="btn btn-primary fa fa-paint-brush" id="drawing-line"
         >Line</span
-      >
+      > 
 
       <!-- The drawing line button  -->
       <span class="btn btn-primary fa fa-paint-brush" id="drawing-straightline"
         >Straight Line</span
-      >
+      > 
       <!-- The fill button -->
       <span class="btn btn-primary bi bi-eraser-fill" id="color-fill"
         >Fill</span
-      >
+      > 
 
       <!-- The eraser button  -->
       <span class="btn btn-primary bi bi-eraser-fill" id="drawing-eraser"
         >Eraser</span
-      >
+      > 
       <!-- The clear button -->
-      <span class="btn btn-primary bi bi-eraser-fill" id="clear">Clear</span>
+      <span class="btn btn-primary bi bi-eraser-fill" id="clear"
+        >Clear</span
+      > 
       <!-- The undo button -->
-      <span class="btn btn-primary bi bi-eraser-fill" id="undo">Undo</span>
+      <span class="btn btn-primary bi bi-eraser-fill" id="undo"
+        >Undo</span
+      > 
       <!-- The redo button -->
-      <span class="btn btn-primary bi bi-eraser-fill" id="redo">Redo</span>
-      <!-- Textbox button-->
+      <span class="btn btn-primary bi bi-eraser-fill" id="redo"
+        >Redo</span
+      > 
+            <!-- Textbox button-->
 
       <!-- Textbox button-->
       <span class="btn btn-primary" id="text-box-button">Text Box</span>
       <!--Font size-->
       <div>
         <label for="text-size">Text Size</label>
-        <input type="range" value="10" id="text-size" min="10" max="100" />
+         
+          <input type="range" value="10" id="text-size" min="10" max="100">
+      </div>
+     
 
-        <!--Font selector-->
-        <label for="text-font">Text Font</label>
-        <select id="text-font">
-          <option style="font-family: Times New Roman">Times New Roman</option>
-          <option style="font-family: Verdana">Verdana</option>
-          <option style="font-family: Helvetica">Helvetica</option>
-          <option style="font-family: Tahoma">Tahoma</option>
-          <option style="font-family: Arial">Arial</option>
-          <option style="font-family: Georgia">Georgia</option>
-          <option style="font-family: Courier New">Courier New</option>
-        </select>
+      <!--Font selector-->
+      <label for="text-font">Text Font</label>
+      <select id="text-font">
+        <option style="font-family: Times New Roman">Times New Roman</option>
+        <option style="font-family: Verdana">Verdana</option>
+        <option style="font-family: Helvetica">Helvetica</option>
+        <option style="font-family: Tahoma">Tahoma</option>
+        <option style="font-family: Arial">Arial</option>
+        <option style="font-family: Georgia">Georgia</option>
+        <option style="font-family: Courier New">Courier New</option>
+      </select>
+      
       
 
-      <!-- color selector -->
-      <a><input type="color" value="#010101" id="color-selector" /></a>
-      <!-- width -->
+     
 
-      <div class="sizeImage"></div>
+      </div>
+    
 
-      <label for="width-selector">Stroke Width</label>
-      <input
-        onInput="linewidth=this.value"
-        type="range"
-        value="8"
-        id="width-selector"
-        min="3"
-        max="20"
-      />
-    </div>
-    <!-- jQuery -->
-    <script
+<!-- color selector -->
+<input type="color" value="#000000" id="color-selector">
+<!-- width -->
+
+<div class="sizeImage"></div>
+<div>
+  <label for="width-selector">Stroke Width</label>
+  <input onInput="linewidth=this.value" type="range" value="8" id="width-selector" min="3" max="20">
+</div>
+
+
+
+<!-- jQuery -->
+      <script
       src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
-    <script src="./javascript/undo.js" type="text/javascript"></script>
+    <script
+      src="./javascript/undo.js"
+      type="text/javascript"
+    ></script>
     <!-- The drawing functionality  -->
-    <script src="./javascript/canvas-common.js" type="text/javascript"></script>
+    <script
+      src="./javascript/canvas-common.js"
+      type="text/javascript"
+    ></script>
 
     <!-- The drawing line functionality  -->
-    <script src="./javascript/drawing-line.js" type="text/javascript"></script>
+    <script
+      src="./javascript/drawing-line.js"
+      type="text/javascript"
+    ></script>
     <!-- The drawing rectangle functionality  -->
     <script
       src="./javascript/drawing-rectangle.js"
       type="text/javascript"
     ></script>
-    <!-- The drawing stroke-rectangle functionality  -->
+        <!-- The drawing stroke-rectangle functionality  -->
     <script
       src="./javascript/drawing-strokerectangle.js"
       type="text/javascript"
     ></script>
-    <!-- The drawing circle functionality  -->
+        <!-- The drawing circle functionality  -->
     <script
       src="./javascript/drawing-circle.js"
       type="text/javascript"
     ></script>
-    <!-- The eraser functionality  -->
+        <!-- The eraser functionality  -->
     <script
       src="./javascript/drawing-eraser.js"
       type="text/javascript"
@@ -152,24 +170,30 @@
       src="./javascript/drawing-strokecircle.js"
       type="text/javascript"
     ></script>
-    <script src="./javascript/colorselector.js" type="text/javascript"></script>
     <script
+      src="./javascript/colorselector.js"
+      type="text/javascript"
+    ></script>
+     <script
       src="./javascript/drawing-straightline.js"
       type="text/javascript"
     ></script>
-    <script src="./javascript/text.js" type="text/javascript"></script>
-    <script src="./javascript/color-fill.js" type="text/javascript"></script>
+    <script
+      src="./javascript/text.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./javascript/color-fill.js"
+      type="text/javascript"
+    ></script>
 
     <!--Textbox functionality-->
     <script src="./javascript/text.js" type="text/javascript"></script>
     <!--Straight line functionality-->
     <script src="./javascript/straight-line.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/javascript/canvas-click.js" type="text/javascript"></script>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/javascript/canvas-click.js"type="text/javascript">
+    </script>
   </body>
 </html>
