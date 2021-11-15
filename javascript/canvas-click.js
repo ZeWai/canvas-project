@@ -39,6 +39,7 @@ $(()=>{
     $("#text-box-button").click(() => {
         currentFunction = new Text(contextReal, contextDraft);
             $('#canvas-draft').css("cursor","text")
+
     });
        
     $("#color-fill").click(() => {

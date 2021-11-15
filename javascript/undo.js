@@ -29,6 +29,7 @@ function redo () {
         var nextStep = new Image();
         contextReal.clearRect(0,0,canvasReal.width,canvasReal.height);
         nextStep.src = redostep[redostep.length - 1];
+        contextReal.clearRect(0,0,canvasReal.width,canvasReal.height);
         nextStep.onload = function () {
             contextReal.drawImage(nextStep, 0, 0);
         };
