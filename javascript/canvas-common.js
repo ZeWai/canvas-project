@@ -11,6 +11,7 @@ let currentFunction;
 let dragging = false;
 let keyListeners = {shift: false, escape: false}
 
+
 $("#canvas-draft").mousedown(function (e) {
   let mouseX = e.offsetX;
   let mouseY = e.offsetY;
@@ -46,6 +47,10 @@ $("#canvas-draft").mouseenter(function (e) {
   let mouseY = e.offsetY;
   currentFunction.onMouseEnter([mouseX, mouseY], e);
 });
+
+
+
+
 
 /** # Class (all classes will have these methods) #
 /*  ====================== */

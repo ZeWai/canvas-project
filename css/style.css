@@ -1,6 +1,28 @@
+body {
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgba(230, 200, 30, 0.61), rgba(230, 27, 37, 0.685), rgba(251, 255, 0, 0), rgba(13, 180, 231, 0.842));
+}
+
 .canvas {
-  border: 1px black solid;
+  border: solid 3px antiquewhite;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
   position: absolute;
+  transform: rotate(-1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+.text-font{
+  font-family: 'Times New Roman', Times, serif;
   top: 10%;
   bottom: 20%;
   left: 10%;
@@ -11,10 +33,10 @@
 
 #canvas-draft {
   background-color: transparent;
+  cursor: url("data:image/x-icon;base64,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"),
+    auto;
 }
-body {
-  overflow: hidden;
-}
+
 #canvas-container {
   height: 600px;
 }
@@ -35,8 +57,8 @@ body {
   position: absolute;
   left: 70px;
   background-color: white;
-  height: 150px;
-  width: 185px;
+  height: 200px;
+  width: 200px;
   border: solid 1px #ccc;
   opacity: 0;
   padding: 5px;
@@ -67,7 +89,78 @@ h1 {
 
 .btn {
   margin-right: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+.title{
+  font-family: 'Yuji Mai', serif;
+  color: cyan;
+  font-size: 50px;
+}
+
+#container{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  
+  
+}
+#primary-buttons-left{
+  width: 33%;
+  border: 4px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-right: 20px;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.7);
+  
+
+}
+
+#primary-buttons-middle{
+  width: 33%;
+  border: 4px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 20px;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.7);
+
+
+}
+
+#primary-buttons-right{
+  width: 33%;
+  border: 4px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  float: left;
+  box-sizing: border-box;
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.7);
+
+  
+
+}
+
+#far-right{
+  margin-top: 30px;
+}
+
+#far-right-under{
+  margin-top: 10px;
+  margin-left: 85px;
+  
+}
+
+#funny-buttons{
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #canvas-draft {
